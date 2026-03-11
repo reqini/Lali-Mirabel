@@ -1,14 +1,14 @@
 .video-card {
   cursor: pointer;
-  transition: transform 0.35s ease;
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .video-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px) scale(1.02);
 }
 
 .video-card:hover .video-card__frame {
-  box-shadow: 0 16px 40px rgba(91, 33, 182, 0.12), 0 8px 20px rgba(123, 63, 228, 0.08);
+  box-shadow: 0 24px 64px rgba(229, 27, 140, 0.25), 0 12px 32px rgba(156, 78, 221, 0.15);
 }
 
 .video-card:hover .video-card__title {
@@ -23,8 +23,9 @@
   border-radius: var(--radius-hero-lg);
   overflow: hidden;
   background: #111;
-  box-shadow: var(--shadow-photo);
-  transition: box-shadow 0.35s ease;
+  box-shadow: 0 16px 40px rgba(123, 63, 228, 0.12), 0 8px 20px rgba(123, 63, 228, 0.08);
+  transition: box-shadow var(--transition-fluid);
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .video-card__title {

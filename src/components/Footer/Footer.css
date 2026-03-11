@@ -2,13 +2,29 @@
   padding: var(--spacing-lg) var(--spacing-md);
   text-align: center;
   border-top: 1px solid var(--color-border);
-  background: var(--color-bg);
+  background: linear-gradient(180deg, #FAFBFF 0%, #F5F3F8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(216, 180, 248, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .footer__copyright {
   font-size: 0.875rem;
   color: var(--color-text-muted);
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

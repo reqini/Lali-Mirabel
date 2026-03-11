@@ -1,82 +1,164 @@
 .brands {
-  padding: var(--spacing-2xl) var(--spacing-md);
+  padding: 5rem var(--spacing-md);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5F0FF 50%, #FAF7FF 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.brands::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -300px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(196, 161, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.brands::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(246, 193, 215, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.brands__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .brands__title {
-  text-align: center;
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.brands__subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--color-text-muted);
-  margin-bottom: var(--spacing-xl);
+  font-weight: 500;
+}
+
+.brands__container {
+  position: relative;
+  z-index: 1;
 }
 
 .brands__logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 48px 56px;
-  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0;
 }
 
 .brands__logo {
-  flex: 0 0 auto;
-  padding: 16px;
-  filter: grayscale(100%);
-  transition: filter 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--transition-fluid);
+  cursor: pointer;
 }
 
-.brands__logo:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  box-shadow: 0 8px 32px rgba(123, 63, 228, 0.2), 0 4px 16px rgba(196, 161, 255, 0.15);
+.brands__logo-inner {
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1.5px solid rgba(196, 161, 255, 0.2);
+  padding: 1.5rem;
+  transition: all var(--transition-fluid);
+  box-shadow: 0 8px 24px rgba(123, 63, 228, 0.08);
+}
+
+.brands__logo:hover .brands__logo-inner {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(123, 63, 228, 0.4);
+  box-shadow: 0 16px 48px rgba(123, 63, 228, 0.2), 0 8px 24px rgba(229, 27, 140, 0.1);
+  transform: translateY(-4px);
 }
 
 .brands__logo img {
-  width: 145px;
+  width: 100%;
   height: auto;
-  max-height: 56px;
+  max-width: 140px;
+  max-height: 70px;
   object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.brands__logo:hover img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .brands__logos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .brands__logo-inner {
+    width: 140px;
+    height: 90px;
+    padding: 1.25rem;
+  }
+
+  .brands__logo img {
+    max-width: 120px;
+    max-height: 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .brands {
-    padding: 48px 0;
+    padding: 3rem var(--mobile-padding);
+  }
+
+  .brands__header {
+    margin-bottom: 2.5rem;
   }
 
   .brands__title {
-    margin-bottom: 24px;
-    padding: 0 var(--mobile-padding);
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .brands__subtitle {
+    font-size: 0.95rem;
   }
 
   .brands__logos {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 0 var(--mobile-padding);
-    gap: 32px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
   }
 
-  .brands__logos::-webkit-scrollbar {
-    display: none;
-  }
-
-  .brands__logo {
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-  }
-
-  .brands__logo {
-    padding: 12px;
+  .brands__logo-inner {
+    width: 120px;
+    height: 80px;
+    padding: 1rem;
+    border-radius: 12px;
   }
 
   .brands__logo img {
-    width: 100px;
-    max-height: 44px;
+    max-width: 100px;
+    max-height: 50px;
   }
 }

@@ -13,9 +13,10 @@ interface VideoCardProps {
   video: VideoItem;
   index?: number;
   isMobile?: boolean;
+  onVideoClick?: (video: VideoItem) => void;
 }
 
-export function VideoCard({ video, index = 0, isMobile = false }: VideoCardProps) {
+export function VideoCard({ video, index = 0, isMobile = false, onVideoClick }: VideoCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasHover, setHasHover] = useState(false);
@@ -41,6 +42,8 @@ export function VideoCard({ video, index = 0, isMobile = false }: VideoCardProps
       } else {
         handlePlay();
       }
+    } else if (!isMobile && onVideoClick) {
+      onVideoClick(video);
     }
   };
 
@@ -72,7 +75,7 @@ export function VideoCard({ video, index = 0, isMobile = false }: VideoCardProps
           ref={videoRef}
           className="video-card__video"
           src={video.video}
-          poster={video.thumbnail}
+          
           muted
           loop
           playsInline

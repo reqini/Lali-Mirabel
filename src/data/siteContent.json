@@ -53,25 +53,79 @@
       {
         "id": 1,
         "title": "Cocina Essen",
-        "video": "/videos/reel1.mp4",
+        "video": "/videos/video-1.mp4",
         "thumbnail": "/images/reel1.jpg"
       },
       {
         "id": 2,
         "title": "Review producto",
-        "video": "/videos/reel2.mp4",
+        "video": "/videos/video-2.mp4",
         "thumbnail": "/images/reel2.jpg"
       },
       {
         "id": 3,
         "title": "Lifestyle video",
-        "video": "/videos/reel3.mp4",
+        "video": "/videos/video-3.mp4",
         "thumbnail": "/images/reel3.jpg"
       },
       {
         "id": 4,
         "title": "Unboxing",
-        "video": "/videos/reel4.mp4",
+        "video": "/videos/video-4.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Unboxing",
+        "video": "/videos/video-5.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Unboxing",
+        "video": "/videos/video-6.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Unboxing",
+        "video": "/videos/video-7.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Unboxing",
+        "video": "/videos/video-8.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Unboxing",
+        "video": "/videos/video-9.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Unboxing",
+        "video": "/videos/video-10.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Unboxing",
+        "video": "/videos/video-11.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Unboxing",
+        "video": "/videos/video-12.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Unboxing",
+        "video": "/videos/video-13.mp4",
         "thumbnail": "/images/reel4.jpg"
       }
     ],
@@ -108,8 +162,9 @@
     "contact": {
       "title": "Trabajemos juntos",
       "description": "Si querés contenido auténtico para tu marca, escribime.",
-      "email": "contacto@lalimirabel.com",
-      "instagram": "https://instagram.com/lalimirabel",
+      "email": "lalimirabel@gmail.com",
+      "phone": "+54 9 11 6422-5499",
+      "instagram": "https://www.instagram.com/lalimirabel",
       "image": "/images/contacto.jpeg"
     },
     "footer": {

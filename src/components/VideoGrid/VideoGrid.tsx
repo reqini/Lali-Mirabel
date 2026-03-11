@@ -5,9 +5,10 @@ import './VideoGrid.css';
 
 interface VideoGridProps {
   videos: VideoItem[];
+  onVideoClick?: (video: VideoItem) => void;
 }
 
-export function VideoGrid({ videos }: VideoGridProps) {
+export function VideoGrid({ videos, onVideoClick }: VideoGridProps) {
   return (
     <motion.section
       id="videos"
@@ -18,9 +19,9 @@ export function VideoGrid({ videos }: VideoGridProps) {
       transition={{ duration: 0.5 }}
     >
       <div className="video-grid-section__inner">
-        <div className={`video-grid ${videos.length > 4 ? 'video-grid--carousel' : ''}`}>
+        <div className="video-grid">
           {videos.map((video, i) => (
-            <VideoCard key={video.id} video={video} index={i} isMobile={false} />
+            <VideoCard key={video.id} video={video} index={i} isMobile={false} onVideoClick={onVideoClick} />
           ))}
         </div>
       </div>
