@@ -1,0 +1,189 @@
+{
+  "creador": {
+    "nombre": "Lali Mirabel",
+    "titulo": "UGC Content Creator",
+    "descripcionCorta": "Creo contenido auténtico para marcas que buscan conectar con su audiencia.",
+    "email": "hello@lalimirabel.com",
+    "telefono": "+54 9 11 XXXX-XXXX",
+    "instagram": "https://instagram.com/lalimirabel",
+    "whatsapp": "https://wa.me/5491111111111",
+    "tiktok": "https://tiktok.com/@lalimirabel"
+  },
+  "colores": {
+    "primario": "#FF1493",
+    "secundario": "#9D4EDD",
+    "terciario": "#25D366",
+    "fondo": "#FFFFFF",
+    "fondo_alterno": "#F5F3F8",
+    "fondo_claro": "#FAFAF9",
+    "fondo_claro2": "#F8F6FB",
+    "texto": "#0F0F0F",
+    "texto_muted": "#686868",
+    "gradiente_hot": "linear-gradient(135deg, #FF1493 0%, #FF69B4 100%)",
+    "gradiente_neon": "linear-gradient(135deg, #FF1493 0%, #9D4EDD 100%)"
+  },
+  "imagenes": {
+    "heroFondo": "/images/creator-hero.jpeg",
+    "aboutFondo": "/images/quienes-somos.jpeg",
+    "contactFondo": "/images/contact-bg.jpeg",
+    "logoFavicon": "/images/logo-favicon.png"
+  },
+  "marcas": {
+    "titulo": "Marcas con las que trabajé",
+    "logos": [
+      "/images/brands/marca-1.jpg",
+      "/images/brands/marca-2.jpg",
+      "/images/brands/marca-3.jpg",
+      "/images/brands/marca-4.jpg",
+      "/images/brands/marca-5.jpg",
+      "/images/brands/marca-6.jpg",
+      "/images/brands/marca-7.jpg"
+    ]
+  },
+  "sobre": {
+    "titulo": "Sobre mí",
+    "subtitulo": "Mi Historia",
+    "parrafos": [
+      "Soy una mamá y mujer real, sin filtros, que le gusta compartir experiencias e inspirar mujeres desde la verdad.",
+      "Vengo del mundo de las ventas, marketing y coaching motivacional, y hoy me dedico a crear videos auténticos, cercanos y funcionales para marcas que buscan conectar desde lo real.",
+      "Trabajo con productos que se integran a la vida cotidiana, priorizando una comunicación simple, honesta y efectiva.",
+      "Mi enfoque está en generar contenido usable, adaptable y alineado a la identidad de tu marca, para que otros la elijan."
+    ]
+  },
+  "estadisticas": [
+    {
+      "numero": "500+",
+      "label": "Videos Creados"
+    },
+    {
+      "numero": "50+",
+      "label": "Marcas Colaboradas"
+    },
+    {
+      "numero": "10M+",
+      "label": "Vistas Totales"
+    },
+    {
+      "numero": "99%",
+      "label": "Satisfacción Clientes"
+    }
+  ],
+  "servicios": [
+    {
+      "titulo": "UGC Videos",
+      "descripcion": "Videos verticales optimizados para TikTok, Instagram Reels y Ads.",
+      "icono": "🎬"
+    },
+    {
+      "titulo": "Product Reviews",
+      "descripcion": "Reviews auténticas que generan confianza en potenciales clientes.",
+      "icono": "⭐"
+    },
+    {
+      "titulo": "Unboxing",
+      "descripcion": "Contenido visual atractivo mostrando la experiencia del producto.",
+      "icono": "📦"
+    },
+    {
+      "titulo": "Testimonios",
+      "descripcion": "Videos de clientes satisfechos que impulsan la conversión.",
+      "icono": "💬"
+    },
+    {
+      "titulo": "Tutoriales",
+      "descripcion": "Guías paso a paso que enseñan cómo usar tu producto.",
+      "icono": "📚"
+    },
+    {
+      "titulo": "Lifestyle Content",
+      "descripcion": "Contenido que integra tu marca en la vida cotidiana.",
+      "icono": "✨"
+    }
+  ],
+  "procesoDeTrabajo": [
+    {
+      "numero": 1,
+      "titulo": "Brief",
+      "descripcion": "Recibimos tu briefing y entendemos tu objetivo"
+    },
+    {
+      "numero": 2,
+      "titulo": "Creación",
+      "descripcion": "Creo contenido auténtico adaptado a tu marca"
+    },
+    {
+      "numero": 3,
+      "titulo": "Revisión",
+      "descripcion": "Revisamos juntos y ajustamos según feedback"
+    },
+    {
+      "numero": 4,
+      "titulo": "Entrega",
+      "descripcion": "Videos listos para usar en todas tus plataformas"
+    }
+  ],
+  "entregables": [
+    {
+      "titulo": "Video Principal",
+      "descripcion": "Video de 30-60 segundos optimizado para conversión",
+      "icono": "🎥"
+    },
+    {
+      "titulo": "Versiones Alternativas",
+      "descripcion": "3-5 variantes del mismo contenido para A/B testing",
+      "icono": "🔄"
+    },
+    {
+      "titulo": "Formatos Multi-Plataforma",
+      "descripcion": "Versiones para TikTok, YouTube, Instagram y ads",
+      "icono": "📱"
+    },
+    {
+      "titulo": "Pack Completo",
+      "descripcion": "Todos los formatos en alta resolución y sin marca de agua",
+      "icono": "📦"
+    },
+    {
+      "titulo": "Subtítulos",
+      "descripcion": "Subtítulos en español e inglés incluidos",
+      "icono": "📝"
+    }
+  ],
+  "testimonios": [
+    {
+      "nombre": "Cliente Satisfecho",
+      "marca": "Marca Premium",
+      "comentario": "Excelente trabajo! El contenido que creó superó todas nuestras expectativas.",
+      "rating": 5
+    },
+    {
+      "nombre": "Otro Cliente",
+      "marca": "Brand Innovadora",
+      "comentario": "Recomendamos totalmente. Profesionalismo y creatividad en cada entrega.",
+      "rating": 5
+    },
+    {
+      "nombre": "Cliente Tercero",
+      "marca": "Empresa Confiable",
+      "comentario": "Videos de alta calidad que generaron conversiones inmediatas.",
+      "rating": 5
+    }
+  ],
+  "contacto": {
+    "titulo": "Trabajemos juntos",
+    "subtitulo": "Transformemos tu marca en contenido que vende",
+    "descripcion": "Cuéntame sobre tu proyecto y cómo podemos colaborar para llevar tu marca al siguiente nivel.",
+    "botonEmail": {
+      "texto": "📧 Enviar Email",
+      "enlace": "mailto:hello@lalimirabel.com"
+    },
+    "botonWhatsapp": {
+      "texto": "💬 WhatsApp",
+      "enlace": "https://wa.me/5491111111111"
+    },
+    "botonInstagram": {
+      "texto": "📸 Instagram",
+      "enlace": "https://instagram.com/lalimirabel"
+    }
+  }
+}

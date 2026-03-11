@@ -18,6 +18,29 @@ export function Hero({ content }: HeroProps) {
     document.getElementById('videos')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const nameLetters = content.name.split('');
+  const spaceIndex = content.name.indexOf(' ');
+
+  const letterVariants = {
+    initial: { opacity: 0, y: 20, scale: 0.8 },
+    animate: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1
+    }
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+        delayChildren: 0.1
+      }
+    }
+  };
+
   return (
     <motion.section
       className="hero"
@@ -37,11 +60,25 @@ export function Hero({ content }: HeroProps) {
         <div className="hero__content">
           <motion.h1
             className="hero__title"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
           >
-            {content.name}
+            {nameLetters.map((letter, index) => (
+              <motion.span key={`${letter}-${index}`}>
+                {index === spaceIndex ? (
+                  <br />
+                ) : (
+                  <motion.span
+                    className="hero__title-letter"
+                    variants={letterVariants}
+                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                  >
+                    {letter}
+                  </motion.span>
+                )}
+              </motion.span>
+            ))}
           </motion.h1>
           <motion.p
             className="hero__headline"

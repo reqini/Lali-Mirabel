@@ -22,7 +22,7 @@
   aspect-ratio: 9 / 16;
   border-radius: var(--radius-hero-lg);
   overflow: hidden;
-  background: #111;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   box-shadow: 0 16px 40px rgba(123, 63, 228, 0.12), 0 8px 20px rgba(123, 63, 228, 0.08);
   transition: box-shadow var(--transition-fluid);
   border: 1px solid rgba(255,255,255,0.05);
@@ -67,6 +67,32 @@
 .video-card__play--hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.video-card__loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26, 26, 26, 0.9);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.video-card__spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(229, 27, 140, 0.8);
+  border-radius: 50%;
+  animation: spin-video 0.8s linear infinite;
+}
+
+@keyframes spin-video {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 768px) {

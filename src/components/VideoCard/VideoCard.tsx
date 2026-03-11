@@ -20,6 +20,7 @@ export function VideoCard({ video, index = 0, isMobile = false, onVideoClick }: 
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasHover, setHasHover] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setHasHover(window.matchMedia('(hover: hover)').matches);
@@ -75,14 +76,19 @@ export function VideoCard({ video, index = 0, isMobile = false, onVideoClick }: 
           ref={videoRef}
           className="video-card__video"
           src={video.video}
-          
           muted
           loop
           playsInline
           preload="metadata"
+          onLoadedMetadata={() => setIsLoading(false)}
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
         />
+        {isLoading && (
+          <div className="video-card__loading">
+            <div className="video-card__spinner" />
+          </div>
+        )}
         {isMobile && (
           <button
             type="button"
