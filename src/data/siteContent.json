@@ -1,0 +1,119 @@
+{
+  "home": {
+    "hero": {
+      "name": "Lali Mirabel",
+      "headline": "UGC Content Creator",
+      "description": "Creo contenido auténtico para marcas que buscan conectar con su audiencia.",
+      "image": "/images/creator-hero.jpeg",
+      "ctaText": "Ver mi contenido"
+    },
+    "brands": {
+      "title": "Marcas con las que trabajé",
+      "logos": [
+        "/images/brands/marca-1.jpg",
+        "/images/brands/marca-2.jpg",
+        "/images/brands/marca-3.jpg",
+        "/images/brands/marca-4.jpg",
+        "/images/brands/marca-5.jpe",
+        "/images/brands/marca-6.jpg",
+        "/images/brands/marca-7.jpg"
+      ]
+    },
+    "about": {
+      "title": "Sobre mí",
+      "paragraphs": [
+        "Soy creadora de contenido UGC enfocada en contenido real y cercano.",
+        "Trabajo con marcas que buscan generar confianza con su audiencia.",
+        "Mi estilo es natural, auténtico y pensado para redes sociales."
+      ],
+      "image": "/images/quienes-somos.jpeg"
+    },
+    "services": {
+      "title": "Servicios",
+      "items": [
+        {
+          "title": "UGC Videos",
+          "description": "Videos verticales optimizados para TikTok, Instagram Reels y Ads."
+        },
+        {
+          "title": "Product Reviews",
+          "description": "Reviews auténticas que generan confianza en potenciales clientes."
+        },
+        {
+          "title": "Unboxing",
+          "description": "Contenido visual atractivo mostrando la experiencia del producto."
+        },
+        {
+          "title": "Lifestyle Content",
+          "description": "Integración natural del producto en la vida diaria."
+        }
+      ]
+    },
+    "videos": [
+      {
+        "id": 1,
+        "title": "Cocina Essen",
+        "video": "/videos/reel1.mp4",
+        "thumbnail": "/images/reel1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Review producto",
+        "video": "/videos/reel2.mp4",
+        "thumbnail": "/images/reel2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Lifestyle video",
+        "video": "/videos/reel3.mp4",
+        "thumbnail": "/images/reel3.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Unboxing",
+        "video": "/videos/reel4.mp4",
+        "thumbnail": "/images/reel4.jpg"
+      }
+    ],
+    "stats": {
+      "title": "Resultados",
+      "items": [
+        {
+          "label": "Videos creados",
+          "value": "120+"
+        },
+        {
+          "label": "Marcas colaborando",
+          "value": "25+"
+        },
+        {
+          "label": "Visualizaciones",
+          "value": "3M+"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Lo que dicen las marcas",
+      "items": [
+        {
+          "name": "Marca Beauty",
+          "text": "El contenido de Lali fue increíble. Muy natural y perfecto para nuestras campañas."
+        },
+        {
+          "name": "Startup Tech",
+          "text": "Logramos aumentar la conversión usando sus videos UGC."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Trabajemos juntos",
+      "description": "Si querés contenido auténtico para tu marca, escribime.",
+      "email": "contacto@lalimirabel.com",
+      "instagram": "https://instagram.com/lalimirabel",
+      "image": "/images/contacto.jpeg"
+    },
+    "footer": {
+      "copyright": "© 2026 Lali Mirabel"
+    }
+  }
+}

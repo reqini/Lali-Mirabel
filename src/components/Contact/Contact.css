@@ -1,0 +1,117 @@
+.contact {
+  padding: var(--spacing-2xl) var(--spacing-md);
+  background: #F7F7F7;
+}
+
+.contact__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contact__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.contact__photo-block {
+  width: 100%;
+}
+
+.contact__photo {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.contact__content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact__content {
+    text-align: left;
+  }
+}
+
+.contact__title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.contact__description {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .contact__links {
+    justify-content: flex-start;
+  }
+}
+
+.contact__link {
+  padding: 0.75rem 1.5rem;
+  background: var(--gradient-accent);
+  color: white;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 4px 16px rgba(123, 63, 228, 0.3);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.contact__link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(123, 63, 228, 0.4), 0 4px 12px rgba(91, 33, 182, 0.2);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 48px var(--mobile-padding);
+  }
+
+  .contact__inner {
+    gap: 32px;
+  }
+
+  .contact__photo-block {
+    order: 1;
+  }
+
+  .contact__content {
+    order: 2;
+  }
+
+  .contact__photo {
+    max-height: 280px;
+  }
+
+  .contact__links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact__link {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    text-align: center;
+    min-height: 48px;
+  }
+}
