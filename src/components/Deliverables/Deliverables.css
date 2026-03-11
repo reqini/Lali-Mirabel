@@ -1,0 +1,129 @@
+.deliverables {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #FFF8F5 0%, #F5F0FA 50%, #FFF5F8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.deliverables::before {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 20, 147, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.deliverables__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.deliverables__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.deliverables__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: var(--gradient-hot);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.deliverables__description {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.deliverables__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.deliverables__item {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 20, 147, 0.1);
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.deliverables__item:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 40px rgba(255, 20, 147, 0.12);
+  border-color: rgba(255, 20, 147, 0.25);
+}
+
+.deliverables__icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.deliverables__item-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.deliverables__item-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .deliverables {
+    padding: 60px 20px;
+  }
+
+  .deliverables__title {
+    font-size: 2rem;
+  }
+
+  .deliverables__description {
+    font-size: 1rem;
+  }
+
+  .deliverables__grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .deliverables__item {
+    padding: 25px 15px;
+  }
+
+  .deliverables__icon {
+    font-size: 2rem;
+  }
+
+  .deliverables__item-title {
+    font-size: 1rem;
+  }
+
+  .deliverables__item-description {
+    font-size: 0.8rem;
+  }
+}

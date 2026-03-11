@@ -53,6 +53,99 @@
         }
       ]
     },
+    "servicesForBrands": {
+      "title": "Servicios para marcas",
+      "description": "Colaboraciones diseñadas para conectar tu marca con audiencias reales y auténticas",
+      "items": [
+        {
+          "icon": "🎥",
+          "title": "Creación de contenido UGC",
+          "description": "Videos y fotos pensados específicamente para publicidad y conversión de tu marca."
+        },
+        {
+          "icon": "📱",
+          "title": "Contenido para redes sociales",
+          "description": "Reels, TikTok y stories optimizados para Instagram y TikTok orgánico."
+        },
+        {
+          "icon": "📦",
+          "title": "Unboxing y demostraciones",
+          "description": "Presentación natural y auténtica de tu producto en video."
+        },
+        {
+          "icon": "✨",
+          "title": "Lifestyle integrado",
+          "description": "Tu producto en rutinas reales: belleza, cocina, familia, autocuidado."
+        },
+        {
+          "icon": "🎬",
+          "title": "Contenido para lanzamientos",
+          "description": "Cobertura de eventos, lanzamientos y experiencias de marca."
+        },
+        {
+          "icon": "👍",
+          "title": "Reviews y testimonios",
+          "description": "Opiniones honestas que generan confianza y identificación con tu audiencia."
+        }
+      ]
+    },
+    "workProcess": {
+      "title": "Cómo es trabajar conmigo",
+      "description": "Un proceso simple, transparente y enfocado en tus objetivos",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Contacto y brief",
+          "description": "Nos conectamos, comparte los detalles de tu marca, producto y objetivos de la campaña."
+        },
+        {
+          "number": 2,
+          "title": "Idea creativa",
+          "description": "Propongo una idea auténtica que combine tu producto con mi estilo y audiencia."
+        },
+        {
+          "number": 3,
+          "title": "Producción",
+          "description": "Grabo y edito el contenido manteniendo calidad profesional y autenticidad."
+        },
+        {
+          "number": 4,
+          "title": "Entrega lista",
+          "description": "Recibes contenido listo para publicar en todos los formatos que necesites."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "Tipos de contenido entregable",
+      "description": "Múltiples formatos para adaptar a tus necesidades",
+      "types": [
+        {
+          "icon": "📹",
+          "title": "Reels 60-90seg",
+          "description": "Formato vertical optimizado para Instagram y TikTok"
+        },
+        {
+          "icon": "🎞️",
+          "title": "TikTok videos",
+          "description": "Contenido nativo para la plataforma con máxima viralidad"
+        },
+        {
+          "icon": "📸",
+          "title": "Fotos lifestyle",
+          "description": "Imágenes naturales y editorial para redes e historias"
+        },
+        {
+          "icon": "⭐",
+          "title": "Testimonios y reviews",
+          "description": "Videos cortos de opinión y experiencia con el producto"
+        },
+        {
+          "icon": "🎯",
+          "title": "UGC para publicidad",
+          "description": "Videos específicamente creados para ads y conversión"
+        }
+      ]
+    },
     "videos": [
       {
         "id": 1,

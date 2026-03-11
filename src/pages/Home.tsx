@@ -4,6 +4,9 @@ import { Hero } from '../components/Hero';
 import { Brands } from '../components/Brands';
 import { About } from '../components/About';
 import { Services } from '../components/Services';
+import { ServicesForBrands } from '../components/ServicesForBrands';
+import { WorkProcess } from '../components/WorkProcess';
+import { Deliverables } from '../components/Deliverables';
 import { VideoGrid } from '../components/VideoGrid';
 import { VideoCarouselMobile } from '../components/VideoCarouselMobile';
 import { VideoModal } from '../components/VideoModal';
@@ -34,6 +37,9 @@ export function Home() {
       <Brands content={content.brands} />
       <About content={content.about} />
       <Services content={content.services} />
+      <ServicesForBrands {...content.servicesForBrands} />
+      <WorkProcess {...content.workProcess} />
+      <Deliverables {...content.deliverables} />
       <section id="videos">
         <VideoCarouselMobile videos={content.videos} />
         <VideoGrid videos={content.videos} onVideoClick={handleVideoClick} />
