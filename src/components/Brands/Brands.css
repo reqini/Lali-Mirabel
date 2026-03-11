@@ -50,86 +50,144 @@
   font-weight: 500;
 }
 
-.brands__container {
+.brands__carousel-wrapper {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
-.brands__logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.brands__nav {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 2px solid rgba(229, 27, 140, 0.3);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: all 0.3s ease;
   padding: 0;
 }
 
-.brands__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all var(--transition-fluid);
-  cursor: pointer;
+.brands__nav:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--color-vibrant-magenta);
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(229, 27, 140, 0.2);
 }
 
-.brands__logo-inner {
-  width: 160px;
-  height: 100px;
+.brands__nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+.brands__carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1.5rem 0;
+  flex: 1;
+  min-width: 0;
+  scroll-snap-type: x mandatory;
+}
+
+.brands__carousel::-webkit-scrollbar {
+  height: 4px;
+}
+
+.brands__carousel::-webkit-scrollbar-track {
+  background: rgba(123, 63, 228, 0.08);
+  border-radius: 2px;
+}
+
+.brands__carousel::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FF1493, #9D4EDD);
+  border-radius: 2px;
+}
+
+.brands__carousel::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #E51B8C, #7B3FE4);
+}
+
+.brands__carousel-item {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+.brands__client-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  border-radius: 16px;
   border: 1.5px solid rgba(196, 161, 255, 0.2);
+  border-radius: 16px;
   padding: 1.5rem;
-  transition: all var(--transition-fluid);
+  transition: all 0.3s ease;
   box-shadow: 0 8px 24px rgba(123, 63, 228, 0.08);
+  min-height: 120px;
 }
 
-.brands__logo:hover .brands__logo-inner {
-  background: rgba(255, 255, 255, 0.9);
+.brands__client-card:hover {
+  background: rgba(255, 255, 255, 0.95);
   border-color: rgba(123, 63, 228, 0.4);
   box-shadow: 0 16px 48px rgba(123, 63, 228, 0.2), 0 8px 24px rgba(229, 27, 140, 0.1);
-  transform: translateY(-4px);
 }
 
-.brands__logo img {
+.brands__client-card img {
   width: 100%;
+  max-width: 190px;
   height: auto;
-  max-width: 140px;
-  max-height: 70px;
   object-fit: contain;
   filter: grayscale(30%);
-  transition: filter 0.4s ease, transform 0.4s ease;
+  transition: filter 0.3s ease;
 }
 
-.brands__logo:hover img {
-  filter: grayscale(0);
-  transform: scale(1.05);
+.brands__client-card:hover img {
+  filter: grayscale(0%);
 }
 
 @media (max-width: 1024px) {
-  .brands__logos {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .brands {
+    padding: 4rem var(--spacing-md);
+  }
+
+  .brands__carousel-wrapper {
+    gap: 1.2rem;
+  }
+
+  .brands__nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brands__carousel {
     gap: 1.5rem;
+    padding: 1rem 0;
   }
 
-  .brands__logo-inner {
-    width: 140px;
-    height: 90px;
-    padding: 1.25rem;
+  .brands__client-card {
+    padding: 1.2rem;
+    min-height: 110px;
   }
 
-  .brands__logo img {
-    max-width: 120px;
-    max-height: 60px;
+  .brands__client-card img {
+    max-width: 170px;
   }
 }
 
 @media (max-width: 768px) {
   .brands {
-    padding: 3rem var(--mobile-padding);
+    padding: 3rem var(--spacing-sm);
   }
 
   .brands__header {
@@ -138,27 +196,121 @@
 
   .brands__title {
     font-size: 1.75rem;
-    margin-bottom: 0.5rem;
   }
 
   .brands__subtitle {
     font-size: 0.95rem;
   }
 
-  .brands__logos {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  .brands__carousel-wrapper {
     gap: 1rem;
   }
 
-  .brands__logo-inner {
-    width: 120px;
-    height: 80px;
+  .brands__nav {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brands__nav svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .brands__carousel {
+    gap: 1.2rem;
+    padding: 0.75rem 0;
+  }
+
+  .brands__client-card {
     padding: 1rem;
+    min-height: 100px;
+  }
+
+  .brands__client-card img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands {
+    padding: 2.5rem 16px;
+  }
+
+  .brands__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .brands__title {
+    font-size: 1.5rem;
+  }
+
+  .brands__subtitle {
+    font-size: 0.85rem;
+  }
+
+  .brands__carousel-wrapper {
+    gap: 0.75rem;
+  }
+
+  .brands__nav {
+    width: 34px;
+    height: 34px;
+    border-width: 1.5px;
+  }
+
+  .brands__nav svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .brands__carousel {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .brands__client-card {
+    padding: 0.75rem;
+    min-height: 90px;
     border-radius: 12px;
   }
 
-  .brands__logo img {
+  .brands__client-card img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brands {
+    padding: 2rem 12px;
+  }
+
+  .brands__title {
+    font-size: 1.25rem;
+  }
+
+  .brands__subtitle {
+    font-size: 0.8rem;
+  }
+
+  .brands__carousel-wrapper {
+    gap: 0.5rem;
+  }
+
+  .brands__nav {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brands__carousel {
+    gap: 0.75rem;
+  }
+
+  .brands__client-card {
+    padding: 0.5rem;
+    min-height: 80px;
+  }
+
+  .brands__client-card img {
     max-width: 100px;
-    max-height: 50px;
   }
 }

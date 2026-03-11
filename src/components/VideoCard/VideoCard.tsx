@@ -99,7 +99,6 @@ export function VideoCard({ video, index = 0, isMobile = false, onVideoClick }: 
           </button>
         )}
       </div>
-      <p className="video-card__title">{video.title}</p>
     </motion.div>
   );
 }
