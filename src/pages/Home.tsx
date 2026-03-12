@@ -12,7 +12,7 @@ import { VideoCarouselMobile } from '../components/VideoCarouselMobile';
 import { VideoModal } from '../components/VideoModal';
 import type { VideoItem } from '../components/VideoCard';
 import { Stats } from '../components/Stats';
-import { Testimonials } from '../components/Testimonials';
+/* import { Testimonials } from '../components/Testimonials'; */
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
@@ -45,7 +45,7 @@ export function Home() {
         <VideoGrid videos={content.videos} onVideoClick={handleVideoClick} />
       </section>
       <Stats content={content.stats} />
-      <Testimonials content={content.testimonials} />
+      {/* <Testimonials content={content.testimonials} /> */}
       <Contact content={content.contact} />
       <Footer content={content.footer} />
       <VideoModal video={selectedVideo} isOpen={isModalOpen} onClose={handleCloseModal} />

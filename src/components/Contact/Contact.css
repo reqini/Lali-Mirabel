@@ -267,7 +267,36 @@
   background-position: 100% 100%;
 }
 
+/* TikTok Button */
+.contact__button--tiktok {
+  background: linear-gradient(135deg, #25f4ee, #000000);
+  background-size: 200% 200%;
+  color: white;
+  border: 2px solid transparent;
+  animation: gradient-shift-tiktok 8s ease infinite;
+}
+
+.contact__button--tiktok .contact__button-label,
+.contact__button--tiktok .contact__button-value {
+  color: white;
+}
+
+.contact__button--tiktok:hover {
+  transform: translateX(8px);
+  box-shadow: 0 16px 40px rgba(37, 244, 238, 0.35);
+  background-position: 100% 100%;
+}
+
 @keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-shift-tiktok {
   0%, 100% {
     background-position: 0% 50%;
   }

@@ -3,7 +3,7 @@
     "hero": {
       "name": "Lali Mirabel",
       "headline": "UGC Content Creator",
-      "description": "Creo contenido auténtico para marcas que buscan conectar con su audiencia.",
+      "description": "Soy creadora de contenido basado en la autenticidad y la conexión con la audiencia.",
       "image": "/images/creator-hero.jpeg",
       "ctaText": "Ver mi contenido"
     },
@@ -20,7 +20,7 @@
       ]
     },
     "about": {
-      "title": "Sobre mí",
+      "title": "¿Quien Soy?",
       "paragraphs": [
         "Soy una mamá y mujer real, sin filtros, que le gusta compartir experiencias e inspirar mujeres desde la verdad.",
 
