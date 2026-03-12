@@ -76,7 +76,7 @@ export function VideoCard({ video, index = 0, isMobile = false, onVideoClick }: 
           ref={videoRef}
           className="video-card__video"
           src={video.video}
-          muted
+          /* muted */
           loop
           playsInline
           preload="metadata"
