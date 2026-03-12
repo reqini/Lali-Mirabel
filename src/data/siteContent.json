@@ -17,7 +17,9 @@
         "/images/brands/marca-5.jpg",
         "/images/brands/marca-6.jpg",
         "/images/brands/marca-7.jpg",
-        "/images/brands/marca-8.jpg"
+        "/images/brands/marca-8.jpg",
+        "/images/brands/marca-9.jpg",
+        "/images/brands/marca-10.jpg"
       ]
     },
     "about": {
@@ -169,59 +171,53 @@
       {
         "id": 4,
         "title": "Unboxing",
-        "video": "/videos/video-4.mp4",
+        "video": "/videos/video-5.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 5,
         "title": "Unboxing",
-        "video": "/videos/video-5.mp4",
+        "video": "/videos/video-6.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 6,
         "title": "Unboxing",
-        "video": "/videos/video-6.mp4",
+        "video": "/videos/video-7.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 7,
         "title": "Unboxing",
-        "video": "/videos/video-7.mp4",
+        "video": "/videos/video-8.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 8,
         "title": "Unboxing",
-        "video": "/videos/video-8.mp4",
+        "video": "/videos/video-9.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 9,
         "title": "Unboxing",
-        "video": "/videos/video-9.mp4",
+        "video": "/videos/video-10.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 10,
         "title": "Unboxing",
-        "video": "/videos/video-10.mp4",
+        "video": "/videos/video-11.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
         "id": 11,
         "title": "Unboxing",
-        "video": "/videos/video-11.mp4",
-        "thumbnail": "/images/reel4.jpg"
-      },
-      {
-        "id": 12,
-        "title": "Unboxing",
         "video": "/videos/video-12.mp4",
         "thumbnail": "/images/reel4.jpg"
       },
       {
-        "id": 13,
+        "id": 12,
         "title": "Unboxing",
         "video": "/videos/video-13.mp4",
         "thumbnail": "/images/reel4.jpg"
@@ -233,7 +229,7 @@
         "thumbnail": "/images/reel4.jpg"
       },
       {
-        "id": 13,
+        "id": 14,
         "title": "Unboxing",
         "video": "/videos/video-15.mp4",
         "thumbnail": "/images/reel4.jpg"
