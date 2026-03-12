@@ -3,7 +3,7 @@ import siteContent from '../data/siteContent.json';
 import { Hero } from '../components/Hero';
 import { Brands } from '../components/Brands';
 import { About } from '../components/About';
-import { Services } from '../components/Services';
+/* import { Services } from '../components/Services'; */
 import { ServicesForBrands } from '../components/ServicesForBrands';
 import { WorkProcess } from '../components/WorkProcess';
 import { Deliverables } from '../components/Deliverables';
@@ -36,7 +36,7 @@ export function Home() {
       <Hero content={content.hero} />
       <Brands content={content.brands} />
       <About content={content.about} />
-      <Services content={content.services} />
+      {/* <Services content={content.services} /> */}
       <ServicesForBrands {...content.servicesForBrands} />
       <WorkProcess {...content.workProcess} />
       <Deliverables {...content.deliverables} />
@@ -44,7 +44,7 @@ export function Home() {
         <VideoCarouselMobile videos={content.videos} />
         <VideoGrid videos={content.videos} onVideoClick={handleVideoClick} />
       </section>
-      <Stats content={content.stats} />
+      <Stats content={content.customQuote} />
       {/* <Testimonials content={content.testimonials} /> */}
       <Contact content={content.contact} />
       <Footer content={content.footer} />

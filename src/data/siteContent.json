@@ -16,7 +16,8 @@
         "/images/brands/marca-4.jpg",
         "/images/brands/marca-5.jpg",
         "/images/brands/marca-6.jpg",
-        "/images/brands/marca-7.jpg"
+        "/images/brands/marca-7.jpg",
+        "/images/brands/marca-8.jpg"
       ]
     },
     "about": {
@@ -95,23 +96,23 @@
       "steps": [
         {
           "number": 1,
-          "title": "Contacto y brief",
-          "description": "Nos conectamos, comparte los detalles de tu marca, producto y objetivos de la campaña."
+          "title": "Brief y estrategia",
+          "description": "Todo empieza con una charla breve donde conozco tu marca, tu producto y los objetivos de la campaña. Con esa información definimos el enfoque del contenido para que conecte con tu audiencia y cumpla una función real dentro de tu estrategia."
         },
         {
           "number": 2,
-          "title": "Idea creativa",
-          "description": "Propongo una idea auténtica que combine tu producto con mi estilo y audiencia."
+          "title": "Concepto creativo",
+          "description": "Desarrollo una idea de contenido auténtica y estratégica que integre tu producto de forma natural dentro de mi estilo de comunicación, priorizando formatos que generen conexión, confianza y resultados."
         },
         {
           "number": 3,
-          "title": "Producción",
-          "description": "Grabo y edito el contenido manteniendo calidad profesional y autenticidad."
+          "title": "Producción del contenido",
+          "description": "Grabo y edito el contenido cuidando cada detalle: narrativa, estética, ritmo y formato. El objetivo es lograr piezas dinámicas, profesionales y alineadas con la identidad de tu marca."
         },
         {
           "number": 4,
-          "title": "Entrega lista",
-          "description": "Recibes contenido listo para publicar en todos los formatos que necesites."
+          "title": "Entrega lista para publicar",
+          "description": "Recibís el contenido final optimizado para redes sociales y listo para usar en campañas orgánicas o publicitarias, en los formatos que necesites."
         }
       ]
     },
@@ -121,28 +122,28 @@
       "types": [
         {
           "icon": "📹",
-          "title": "Reels 60-90seg",
-          "description": "Formato vertical optimizado para Instagram y TikTok"
+          "title": "Reels",
+          "description": "Videos verticales optimizados para Instagram y TikTok, diseñados para captar atención, contar una historia y generar engagement."
         },
         {
           "icon": "🎞️",
-          "title": "TikTok videos",
-          "description": "Contenido nativo para la plataforma con máxima viralidad"
+          "title": "Videos para TikTok",
+          "description": "Contenido nativo pensado para la dinámica de TikTok, y consumidores de dicha app."
         },
         {
           "icon": "📸",
           "title": "Fotos lifestyle",
-          "description": "Imágenes naturales y editorial para redes e historias"
+          "description": "Imágenes naturales y estéticas que muestran el producto en un contexto real, ideales para redes sociales, web o historias."
         },
         {
           "icon": "⭐",
           "title": "Testimonios y reviews",
-          "description": "Videos cortos de opinión y experiencia con el producto"
+          "description": "Videos auténticos donde comparto mi experiencia con el producto, generando confianza y credibilidad con la audiencia."
         },
         {
           "icon": "🎯",
           "title": "UGC para publicidad",
-          "description": "Videos específicamente creados para ads y conversión"
+          "description": "Contenido creado específicamente para campañas publicitarias, optimizado para captar atención y mejorar la conversión."
         }
       ]
     },
@@ -242,6 +243,38 @@
           "value": "3M+"
         }
       ]
+    },
+    "customQuote": {
+      "title": "Presupuesto personalizado",
+      "description": "Cada marca tiene objetivos, audiencias y necesidades diferentes. Por eso cada colaboración se diseña de forma estratégica para lograr el mayor impacto posible.",
+      "features": [
+        {
+          "title": "Estrategia personalizada",
+          "description": "Analizo tu marca, tu producto y el objetivo de la campaña antes de crear cualquier contenido."
+        },
+        {
+          "title": "Contenido pensado para conversión",
+          "description": "Cada pieza se diseña para captar atención, generar confianza y motivar a la audiencia a conocer tu producto."
+        },
+        {
+          "title": "Producción optimizada para redes",
+          "description": "Videos y fotos adaptados a formatos que funcionan en Instagram, TikTok y campañas publicitarias."
+        },
+        {
+          "title": "Propuesta a medida",
+          "description": "Cada colaboración se arma según la cantidad de piezas, tipo de contenido y objetivos de tu marca."
+        }
+      ],
+      "processTitle": "Cómo solicitar tu presupuesto",
+      "steps": [
+        "Me contás sobre tu marca, producto y objetivos.",
+        "Analizo la mejor forma de integrar el contenido dentro de tu estrategia.",
+        "Recibís una propuesta personalizada según tus necesidades."
+      ],
+      "cta": {
+        "text": "Solicitar presupuesto personalizado",
+        "link": "#contact"
+      }
     },
     "testimonials": {
       "title": "Lo que dicen las marcas",
